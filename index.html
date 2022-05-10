@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Api de gatitos</title>
-</head>
-<body>
-  <h1>Api de gatitos</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Api de gatitos</title>
+	</head>
+	<body>
+		<h1>Api de gatitos</h1>
 
-  <img width="150px" alt="Gatitos random" class="uno">
-  <img width="150px" alt="Gatitos random" class="dos">
-  <img width="150px" alt="Gatitos random" class="tres">
+		<span class="statusError"></span>
 
+		<article>img</article>
+		<button onclick="loadRandomCats()">Random</button>
+		<section class="randomMichis">
+			<h2>Gatitos Random</h2>
+			<article>
+				<img width="150px" alt="Gatitos random" class="uno" />
+				<button id="btn-1">agregar</button>
+			</article>
 
-  <button onclick="gatitosRandom()">Random</button>
+			<article>
+				<img width="150px" alt="Gatitos random" class="dos" />
+				<button id="btn-2">agregar</button>
+			</article>
 
-  <script src="./main.js"></script>
-</body>
+			<article>
+				<img width="150px" alt="Gatitos random" class="tres" />
+				<button id="btn-3">agregar</button>
+			</article>
+		</section>
+
+		<section id="favouritesMichis"></section>
+
+		<script src="./main.js"></script>
+	</body>
 </html>
